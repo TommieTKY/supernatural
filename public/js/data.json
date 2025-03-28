@@ -1,0 +1,68 @@
+[
+  {
+    "chapter_id": 1,
+    "chapter_image": "c1.jpeg",
+    "chapter_audio": "c1.mp3",
+    "fragments": [
+      {
+        "fragment_id": 1,
+        "fragment_image": "f1.jpeg",
+        "fragment_audio": "f1.mp3"
+      },
+      {
+        "fragment_id": 2,
+        "fragment_image": "f2.png",
+        "fragment_audio": "f2.mp3"
+      },
+      {
+        "fragment_id": 3,
+        "fragment_image": "f3.png",
+        "fragment_audio": "f3.mp3"
+      }
+    ]
+  },
+  {
+    "chapter_id": 2,
+    "chapter_image": "c2.jpg",
+    "chapter_audio": "c2.mp3",
+    "fragments": [
+      {
+        "fragment_id": 4,
+        "fragment_image": "f4.jpg",
+        "fragment_audio": "f4.mp3"
+      },
+      {
+        "fragment_id": 5,
+        "fragment_image": "f5.jpeg",
+        "fragment_audio": "f5.mp3"
+      },
+      {
+        "fragment_id": 6,
+        "fragment_image": "f6.jpg",
+        "fragment_audio": "f6.mp3"
+      }
+    ]
+  },
+  {
+    "chapter_id": 3,
+    "chapter_image": "c3.jpeg",
+    "chapter_audio": "c3.mp3",
+    "fragments": [
+      {
+        "fragment_id": 7,
+        "fragment_image": "f7.jpeg",
+        "fragment_audio": "f7.mp3"
+      },
+      {
+        "fragment_id": 8,
+        "fragment_image": "f8.jpeg",
+        "fragment_audio": "f8.mp3"
+      },
+      {
+        "fragment_id": 9,
+        "fragment_image": "f9.jpg",
+        "fragment_audio": "f9.mp3"
+      }
+    ]
+  }
+]
