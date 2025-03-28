@@ -1,0 +1,370 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gilroy';
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+body {
+    overflow: hidden;
+}
+
+#main {
+    overflow: hidden;
+    will-change: transform;
+    backface-visibility: hidden;
+}
+
+#nav {
+    height: 100px;
+    width: 100%;
+    /* background-color: ; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 60px;
+    position: fixed;
+    z-index: 99;
+}
+
+#nav-part1 {
+
+    width: 40px;
+    /* background-color: ; */
+}
+
+.line {
+    height: 2px;
+    width: 100%;
+    background-color: #ffffff;
+    margin-bottom: 4px;
+    border-radius: 3px;
+}
+
+#nav-part2 button {
+    padding: 7px 18px;
+    border-radius: 50px;
+    border: 1px solid #4d4a4a;
+    margin-right: 15px;
+    font-size: 17px;
+    font-weight: 500;
+    color: #070707;
+    background-color: transparent;
+}
+
+#nav-part2 button:nth-last-child(1) {
+    background-color: #454742;
+    color: #fff;
+}
+
+#page1 {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background: 
+    linear-gradient(rgba(0, 0, 0, 0), rgba(255, 255, 255, 0.5)),
+    url(assets/imgs/isometric-medieval-style-main-building-with-stone-walls-wooden-r.svg);
+}
+
+#page1 img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#page1::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(360deg, rgba(32, 15, 9, 0.699), rgba(32, 15, 9, 0.5));
+}
+
+
+#page2 {
+    min-height: 100vh;
+    padding: 15vh 5vw;
+    background-color: #343636;
+    position: relative;
+    background: 
+    linear-gradient(180deg, rgb(32, 15, 9), rgb(52, 54, 54));
+}
+
+#svg2 {
+    position: absolute;
+    bottom: -5%;
+    width: 250vw;
+    fill: #4a0404;
+    z-index: 9;
+}
+
+#svg3 {
+    position: absolute;
+    bottom: -5%;
+    width: 250vw;
+    transform: translateX(-7%);
+    fill: #343636;
+}
+
+#page2 #text-container {
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+    width: 100%;
+    left: auto;
+}
+
+#page2 #text-container h2 {
+    position: center;
+    padding-top: 3vw;
+    text-align: left;
+    font-size: 6vw;
+    line-height: 5vw;
+    font-family: PP woodland;
+    color: #8e908c;
+    font-weight: 100;
+    text-shadow: #d3d0d0 2px 0px 2px;
+}
+
+#page2 #page2-img {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translateY(-50%);
+    width: 40%;
+}
+
+#page3 {
+    min-height: 100vh;
+    padding: 15vh 5vw;
+    background:
+        linear-gradient(180deg, rgba(52, 54, 54, 0.5), rgb(246, 246, 244,1)),
+        url(assets/imgs/page3-bg.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+#page3 .elem {
+    height: 200px;
+    width: 100%;
+    border: 1px solid #5B6647;
+    border-top: none;
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: flex-end;
+    overflow: hidden;
+}
+
+#page3 .elem:nth-child(1) {
+    border-top: 1px solid #5B6647;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+#page3 .elem:nth-last-child(1) {
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+#page3 #text-container h2 {
+    text-align: left;
+    font-size: 5vw;
+    line-height: 4.6vw;
+    font-family: PP woodland;
+    color: #200F09;
+    text-shadow: #4a040468 2px 0px 2px;
+    margin-bottom: 5vw;
+
+    font-weight: 100;
+}
+
+#page3 #text-container p {
+    position: relative;
+    text-align: right;
+    text-shadow: #200F09 1px 0px 1px;
+    font-size: 3vw;
+    font-style: italic;
+    line-height: 4vw;
+    color: #4a040468;
+    font-weight: 100;
+    font-family: PP woodland;
+    margin-top: 20vw;
+}
+
+
+
+#page4{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    padding: 5vw 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-image: 
+    linear-gradient(rgba(52, 54, 54, 0), rgba(246, 246, 244, 0.5)),
+    url(assets/imgs/page4-bg.webp);
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-color: #f6f6f4;
+}
+#page4-left{
+    height: 100%;
+    width: 250%;
+    background-image: url(assets/imgs/trees.png);
+    background-size: cover;
+    background-position: right;
+    
+
+}
+#page4-center{
+    border-radius: 50px;
+    padding: 1vw 1vw;
+    text-align: center;
+}
+
+#page4-center h1{
+    font-size: 7vw;
+    text-align: flex-start;
+    line-height: 6vw;
+    font-weight: 100;
+    color: #200F09;
+    font-family: PP woodland;
+    margin-bottom: 5vw;
+    text-shadow: #585A52 2px 0px 2px;
+}
+
+#page4-right{
+    height: 100%;
+    width: 200%;
+    background-image: url(assets/imgs/trees.png);
+    border-radius: none;
+    background-size: cover;
+    background-position: left;
+}
+
+#footer {
+    background: #1a1a1a;
+    color: #d0d0d0;
+    padding: 3vw 5vw;
+    text-align: center;
+    font-family: 'PP woodland', serif;
+    position: relative;
+    z-index: 10;
+}
+
+#footer h3 {
+    font-size: 2.5vw;
+    margin-bottom: 1vw;
+    color: #e3e3c4;
+    text-shadow: 1px 1px #000;
+}
+
+#footer p {
+    font-size: 1.2vw;
+    margin-bottom: 1.5vw;
+    line-height: 1.6vw;
+}
+
+.footer-links {
+    margin-bottom: 1.5vw;
+}
+
+.footer-links a {
+    margin: 0 1vw;
+    color: #999;
+    text-decoration: none;
+    font-size: 1vw;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #e3e3c4;
+}
+
+.footer-bottom {
+    font-size: 1vw;
+    color: #666;
+}
+
+
+/* Media Queries */
+@media (max-width: 768px) {
+
+    #page1 img {
+        object-position: center;
+    }
+
+    #page2 #text-container {
+        top: 30%;
+        right: 0;
+        width: 100%;
+        padding: 0 5vw;
+        position: center;
+        
+    }
+
+    #page2 #text-container h2 {
+        font-size: 9vw;
+        line-height: 8vw;
+        text-align: left;
+    }
+
+    #page3 {
+        padding: auto;
+    }
+
+    #page3 .elem {
+        flex-direction: column;
+        height: auto;
+        padding: 20px 10px;
+    }
+
+    #page3 #text-container h2 {
+        font-size: 8vw;
+        line-height: 7vw;
+        margin-bottom: 8vw;
+        margin-top: 10vw;
+    }
+
+    #page3 #text-container p {
+        font-size: 4vw;
+        line-height: 5vw;
+    }
+
+    #page4 {
+        flex-direction: row;
+        height: 100vh;
+    }
+
+    #page4-left {
+        width: 20;
+        height: 100%;
+    }
+    #page4-right {
+        height: 100%;
+    }
+
+    #page4-center h1 {
+        font-size: 9vw;
+        line-height: 8vw;
+        margin-bottom: 8vw;
+    }
+
+    #page4-center {
+        width: 60%;
+        padding: 2vw;
+    }
+}
