@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Creepster&family=Lacquer&family=Special+Elite&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url(../images/background-regular.png) no-repeat center center fixed;
+  background-size: cover;
+  color: white;
+  font-family: 'Special Elite', monospace;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+  padding-bottom: 60px;
+  position: relative;
+}
+
+/* Header Layout */
+.nav-container {
+  position: fixed;
+  top: 20px;
+  left: 40px;
+  right: 40px;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: calc(100% - 80px);
+}
+
+#case-title {
+  font-family: 'Lacquer', system-ui;
+  font-size: 2.2rem;
+  color: white;
+  text-shadow: 2px 2px 4px black;
+  margin: 0;
+}
+
+#nav-links a {
+  font-family: 'Lacquer', system-ui;
+  font-size: 1.2rem;
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  transition: color 0.3s ease;
+}
+
+#nav-links a:hover {
+  color: #ffcccc;
+}
+
+/* Footer */
+#footer {
+  position: fixed;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: 'Special Elite', monospace;
+  font-size: 0.9rem;
+  color: white;
+}
+
+/* Intro Page */
+.main_section {
+  margin-top: 100px;
+  width: 100%;
+  font-family: 'Special Elite', monospace;
+}
+
+.main_section img {
+  border: 4px solid white;
+  border-radius: 20px;
+  box-shadow: 0 0 20px red;
+  width: 100%;
+  max-width: 100%;
+}
+
+.main_section p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #eaeaea;
+  white-space: pre-line;
+}
+
+.main_section audio {
+  margin-top: 1.5rem;
+  border-radius: 30px;
+  background: white;
+  padding: 0.5rem;
+  width: 100%;
+  max-width: 300px;
+}
