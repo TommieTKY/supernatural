@@ -3,7 +3,13 @@ const imagesPath = assetsPath + "images/";
 const audiosPath = assetsPath + "audios/";
 
 const initPage = async () => {
-  const data = await fetch("data.json").then((res) => res.json());
+  const data = await fetch("data.json", {
+    mode: "cors",
+    headers: {
+      "Access-Control-Allow-Origin": "*",
+    },
+  }).then((res) => res.json());
+
   const urlSearchParams = new URLSearchParams(window.location.search);
   const params = Object.fromEntries(urlSearchParams.entries());
   const mode = ["qr", "audio"].includes(params.mode) ? params.mode : "audio";
