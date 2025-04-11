@@ -1,0 +1,81 @@
+{
+  "chapters": [
+    {
+      "id": 1,
+      "description": "brown-outdoor-mat-for-frontdoor",
+      "image": "c1.png",
+      "audio": "c1.mp3",
+      "fragments": [1, 2, 3]
+    },
+    {
+      "id": 2,
+      "description": "leather-book-black-with-blood",
+      "image": "c2.png",
+      "audio": "c2.mp3",
+      "fragments": [4, 5, 6]
+    },
+    {
+      "id": 3,
+      "description": "gold-plate-with-a-half-melted-candle-on-it",
+      "image": "c3.png",
+      "audio": "c3.mp3",
+      "fragments": [7, 8, 9]
+    }
+  ],
+  "fragments": [
+    {
+      "id": 1,
+      "description": "f1",
+      "image": "c1f1.png",
+      "audio": "c1f1.mp3"
+    },
+    {
+      "id": 2,
+      "description": "f2",
+      "image": "c1f2.png",
+      "audio": "c1f2.mp3"
+    },
+    {
+      "id": 3,
+      "description": "f3",
+      "image": "c1f3.png",
+      "audio": "c1f3.mp3"
+    },
+    {
+      "id": 4,
+      "description": "f4",
+      "image": "c2f1.png",
+      "audio": "c2f1.mp3"
+    },
+    {
+      "id": 5,
+      "description": "f5",
+      "image": "c2f2.png",
+      "audio": "c2f2.mp3"
+    },
+    {
+      "id": 6,
+      "description": "f6",
+      "image": "c2f3.png",
+      "audio": "c2f3.mp3"
+    },
+    {
+      "id": 7,
+      "description": "f7",
+      "image": "c3f1.png",
+      "audio": "c3f1.mp3"
+    },
+    {
+      "id": 8,
+      "description": "f8",
+      "image": "c3f2.png",
+      "audio": "c3f2.mp3"
+    },
+    {
+      "id": 9,
+      "description": "f9",
+      "image": "c3f3.png",
+      "audio": "c3f3.mp3"
+    }
+  ]
+}
