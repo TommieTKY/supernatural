@@ -2,28 +2,15 @@ const assetsPath = "./public/assets/";
 const imagesPath = assetsPath + "images/";
 const audiosPath = assetsPath + "audios/";
 
-const initMenu = () => {
-  const menuButtonElem = document.getElementById("menu-button");
-  const menuDropdownElem = document.getElementById("menu-dropdown");
-
-  const toggleMenuHandler = () => {
-    menuDropdownElem.style.visibility =
-      menuDropdownElem.style.visibility === "visible" ? "hidden" : "visible";
-  };
-
-  menuButtonElem.addEventListener("click", toggleMenuHandler);
-};
-
-const pageReady = async () => {
-  initMenu();
+const initPage = async () => {
   const data = await fetch("data.json").then((res) => res.json());
   const urlSearchParams = new URLSearchParams(window.location.search);
   const params = Object.fromEntries(urlSearchParams.entries());
+  const mode = ["qr", "audio"].includes(params.mode) ? params.mode : "audio";
 
-  const type =
-    params.type === "chapter" || params.type === "fragment"
-      ? params.type
-      : "chapter";
+  const type = ["chapter", "fragment"].includes(params.type)
+    ? params.type
+    : "chapter";
 
   const description = params.description ?? data[`${type}s`][0].description;
 
@@ -35,10 +22,52 @@ const pageReady = async () => {
   cardImageElem.src = imagesPath + card.image;
   cardImageElem.alt = card.description;
 
-  const cardAudioElem = document.getElementById("card-audio");
-  cardAudioElem.src = audiosPath + card.audio;
+  if (mode === "qr") {
+    await fetch(
+      `https://api.qrserver.com/v1/create-qr-code/?size=128x128&data=http%3A%2F%2Fsupernatural%2Einfinityfreeapp%2Ecom%2Fcard%2Ehtml%3Ftype%3D${type}%26description%3D${description}`
+    )
+      .then((res) => res.blob())
+      .then((blob) => {
+        const img = URL.createObjectURL(blob);
+        const qrCodeElem = document.getElementById("qr-code");
+        qrCodeElem.src = img;
+        qrCodeElem.style.display = "block";
+      });
 
-  const audioControlsElem = document.getElementById("audio-controls");
+    document.getElementById("audio").style.display = "none";
+    document.getElementById("solution-link").style.display = "none";
+  } else {
+    const cardAudioElem = document.getElementById("card-audio");
+    cardAudioElem.src = audiosPath + card.audio;
+    cardAudioElem.currentTime = 0;
+
+    const audioPlayElem = document.getElementById("audio-play");
+    audioPlayElem.addEventListener("click", () => cardAudioElem.play());
+
+    const audioPauseElem = document.getElementById("audio-pause");
+    audioPauseElem.addEventListener("click", () => cardAudioElem.pause());
+
+    const audioProgressBarElem = document.getElementById("audio-progress-bar");
+
+    audioProgressBarElem.addEventListener("input", () => {
+      if (cardAudioElem.duration) {
+        cardAudioElem.currentTime =
+          (audioProgressBarElem.value / 100) * cardAudioElem.duration;
+
+        cardAudioElem.play();
+      }
+    });
+
+    cardAudioElem.addEventListener("timeupdate", () => {
+      if (cardAudioElem.duration) {
+        audioProgressBarElem.value =
+          (cardAudioElem.currentTime / cardAudioElem.duration) * 100;
+      }
+    });
+
+    const audioMoreElem = document.getElementById("audio-more");
+    audioMoreElem.addEventListener("click", () => console.log("more"));
+  }
 };
 
-window.onload = pageReady;
+window.initPage = initPage;
