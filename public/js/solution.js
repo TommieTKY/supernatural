@@ -288,6 +288,7 @@ const initPage = async () => {
           chapterElem.find(".fragment-card").draggable("disable");
           chapterElem.find(".fragment-card-slot").droppable("disable");
           cardsElem.data("correct", "true");
+          localStorage.setItem(`chapter-${chapterId}-correct`, "true");
         } else if (hasSameElements(chapter.fragments, fragmentIds)) {
           notificationElem.innerText = "Fragments' Order Incorrect!";
           notificationElem.className = "warning";
@@ -424,18 +425,10 @@ const initPage = async () => {
         chapterElem.attr("id").replace("chapter-", "")
       );
 
-      const chapter = chapters[chapterId - 1];
+      const chapterCorrect =
+        localStorage.getItem(`chapter-${chapterId}-correct`) === "true";
 
-      const fragmentIds = chapterElem
-        .find(".fragment-card")
-        .map(function () {
-          return parseInt(
-            $(this).attr("id").replace("fragment-", "").replace("-img", "")
-          );
-        })
-        .get();
-
-      if (isExactlySame(chapter.fragments, fragmentIds)) {
+      if (chapterCorrect) {
         chapterElem.find(".fragment-card").each(function () {
           $(this).css("opacity", "0.5");
         });
@@ -495,6 +488,7 @@ const initPage = async () => {
         $("#chapters").find(".chapter-card").draggable("disable");
         $("#chapters").find(".chapter-card-slot").droppable("disable");
         $("#chapters").data("correct", "true");
+        localStorage.setItem("chapters-correct", "true");
       } else {
         notificationElem.innerText = "Chapters Incorrect!";
         notificationElem.className = "Error";
@@ -502,25 +496,9 @@ const initPage = async () => {
     }
   });
 
-  const allFragmentsCorrect = $("#chapters")
-    .find(".cards")
-    .map(function () {
-      return $(this).data("correct") === "true";
-    })
-    .get()
-    .every((v) => v === true);
+  const chaptersCorrect = localStorage.getItem("chapters-correct") === "true";
 
-  const allChaptersCorrect = isExactlySame(
-    chapters.map((chapter) => chapter.id),
-    $("#chapters")
-      .find(".chapter")
-      .map(function () {
-        return parseInt($(this).attr("id").replace("chapter-", ""));
-      })
-      .get()
-  );
-
-  if (allFragmentsCorrect && allChaptersCorrect) {
+  if (chaptersCorrect) {
     notificationElem.innerText = "Game End!";
     notificationElem.className = "";
 
