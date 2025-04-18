@@ -1,0 +1,95 @@
+#instruction-content {
+  width: 22.0666666667rem;
+  margin: 4rem 0 2rem 0;
+  color: #bbbf9d;
+  line-height: 150%;
+}
+
+#intro h1 {
+  font-family: "Lovers Quarrel", cursive;
+  font-size: 2.13333333333em;
+  display: inline;
+  line-height: 50%;
+  margin: 0;
+}
+
+#intro p {
+  display: inline;
+  line-height: 150%;
+  margin: 0;
+}
+
+#setup {
+  margin-top: 2em;
+}
+
+#instruction-content h2 {
+  font-family: "Lovers Quarrel", cursive;
+  font-size: 2.13333333333em;
+  margin-bottom: 0;
+}
+
+#instruction-content p {
+  font-size: 0.8em;
+  margin-bottom: 0.25em;
+}
+
+#setup ol,
+#winning ul {
+  padding-left: 1em;
+}
+
+#winning {
+  margin-top: 2em;
+}
+
+#winning ul li::marker {
+  font-size: 0.5em;
+}
+
+#decorations {
+  position: relative;
+  width: 100%;
+  height: 13rem;
+  overflow-x: hidden;
+}
+
+#card-green-trees-left {
+  position: absolute;
+  width: 49.34860050890585%;
+  left: -11.45038167938931%;
+  bottom: 0px;
+  z-index: 1;
+}
+
+#card-green-trees-right {
+  position: absolute;
+  width: 51.9618320610687%;
+  right: -9.46819338422392%;
+  bottom: 0px;
+  z-index: 1;
+}
+
+#card-black-trees-left {
+  position: absolute;
+  width: 59.1323155216285%;
+  left: -9.45038167938931%;
+  bottom: 0px;
+  z-index: 2;
+}
+
+#card-black-trees-right {
+  position: absolute;
+  width: 55.47073791348601%;
+  right: -9.4147582697201%;
+  bottom: 0px;
+  z-index: 2;
+}
+
+#card-manor {
+  position: absolute;
+  width: 42.60814249363868%;
+  left: 30.11363636%;
+  bottom: 0px;
+  z-index: 3;
+}

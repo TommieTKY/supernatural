@@ -1,0 +1,145 @@
+#decorations-1 {
+  margin-top: 8rem;
+  width: 100%;
+  position: relative;
+  overflow-x: hidden;
+  height: 21rem;
+}
+
+#curve {
+  position: absolute;
+  width: 89.625954198%;
+  right: 0;
+  z-index: 1;
+}
+
+main p {
+  color: #c8cca7;
+  font-size: 1.6em;
+}
+
+#text-1 {
+  position: absolute;
+  width: 91.348600508%;
+  left: 50%;
+  top: 2%;
+  translate: -50%;
+  z-index: 2;
+}
+
+#text-2 {
+  position: absolute;
+  left: 49%;
+  top: 69%;
+  translate: -50%;
+  z-index: 2;
+}
+
+#fence-1 {
+  position: absolute;
+  width: 53.435114503%;
+  z-index: 2;
+  top: 75%;
+  right: -20%;
+}
+
+#text-3 {
+  align-self: flex-end;
+  text-align: right;
+  margin: 1em 2em 1.5em 0;
+}
+
+#decorations-2 {
+  width: 100%;
+  position: relative;
+  overflow-x: hidden;
+  height: 4.5rem;
+}
+
+#fence-2 {
+  position: absolute;
+  width: 53.435114503%;
+  left: -3%;
+}
+
+#text-4 {
+  text-align: center;
+  margin: 1.5em 0;
+}
+
+#decorations-3 {
+  width: 100%;
+  position: relative;
+  overflow-x: hidden;
+  height: 21rem;
+}
+
+#fence-3 {
+  position: absolute;
+  width: 53.435114503%;
+  left: -13%;
+}
+
+#fence-4 {
+  position: absolute;
+  width: 53.435114503%;
+  right: -17.5%;
+}
+
+#trees-1 {
+  position: absolute;
+  width: 67.938931297%;
+  left: -49.872773536%;
+  bottom: 0;
+  z-index: 1;
+}
+
+#trees-2 {
+  position: absolute;
+  width: 49.109414758%;
+  left: 11.704834605%;
+  bottom: 0;
+  z-index: 0;
+}
+
+#trees-3 {
+  position: absolute;
+  width: 67.938931297%;
+  right: -21.628498727%;
+  bottom: 0;
+  z-index: 1;
+}
+
+#trees-4 {
+  position: absolute;
+  width: 59.132315521%;
+  left: -6.106870229%;
+  bottom: 0;
+  z-index: 3;
+}
+
+#trees-5 {
+  position: absolute;
+  width: 65.773536895%;
+  left: 39.903307888%;
+  bottom: 0;
+  z-index: 3;
+}
+
+#card-manor {
+  position: absolute;
+  width: 42.608142493%;
+  left: 50%;
+  bottom: 0;
+  translate: -50%;
+  z-index: 4;
+}
+
+#end {
+  position: absolute;
+  width: 31.806615776%;
+  left: 50%;
+  top: 23%;
+  translate: -50%;
+  z-index: 5;
+}
