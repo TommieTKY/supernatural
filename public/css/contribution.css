@@ -1,0 +1,58 @@
+#contribution-content {
+  width: 20.6875rem;
+  margin: 10rem 0px;
+  color: #bbbf9d;
+  line-height: 100%;
+}
+
+#contribution-content h1 {
+  font-family: "Lovers Quarrel", cursive;
+  font-size: 2.13333333333em;
+  margin-bottom: 2em;
+}
+
+#contribution-content h2 {
+  font-weight: 700;
+  font-size: 0.8em;
+  margin-bottom: 1em;
+}
+
+#contribution-content p {
+  font-size: 0.8em;
+  margin-bottom: 1em;
+}
+
+#developer-team {
+  margin-bottom: 2em;
+}
+
+#decorations {
+  position: relative;
+  width: 100%;
+  height: 12rem;
+  overflow-x: hidden;
+}
+
+#card-green-trees-left {
+  position: absolute;
+  width: 49.348600508%;
+  left: -11.450381679%;
+  bottom: 0px;
+  z-index: 1;
+}
+
+#card-green-trees-right {
+  position: absolute;
+  width: 51.961832061%;
+  right: -9.468193384%;
+  bottom: 0px;
+  z-index: 1;
+}
+
+#card-black-trees-right {
+  position: absolute;
+  width: 55.47073791348601%;
+  right: -9.4147582697201%;
+  bottom: 0px;
+  z-index: 2;
+}

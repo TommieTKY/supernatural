@@ -26,56 +26,56 @@
     {
       "id": 1,
       "description": "image-shows-a-portrait-on-a-wall",
-      "image": "c1f1.png",
-      "audio": "c1f1.mp3"
+      "image": "c1-f1.png",
+      "audio": "c1-f1.mp3"
     },
     {
       "id": 2,
       "description": "creaked-open-to-a-room-with-a-shadow-underneath",
-      "image": "c1f2.png",
-      "audio": "c1f2.mp3"
+      "image": "c1-f2.png",
+      "audio": "c1-f2.mp3"
     },
     {
       "id": 3,
       "description": "magnifying-glass",
-      "image": "c1f3.png",
-      "audio": "c1f3.mp3"
+      "image": "c1-f3.png",
+      "audio": "c1-f3.mp3"
     },
     {
       "id": 4,
       "description": "brown-shoe",
-      "image": "c2f1.png",
-      "audio": "c2f1.mp3"
+      "image": "c2-f1.png",
+      "audio": "c2-f1.mp3"
     },
     {
       "id": 5,
       "description": "loose-paper-out-of-a-book",
-      "image": "c2f2.png",
-      "audio": "c2f2.mp3"
+      "image": "c2-f2.png",
+      "audio": "c2-f2.mp3"
     },
     {
       "id": 6,
       "description": "loose-floorboard-from-above",
-      "image": "c2f3.png",
-      "audio": "c2f3.mp3"
+      "image": "c2-f3.png",
+      "audio": "c2-f3.mp3"
     },
     {
       "id": 7,
       "description": "secret-society-symbol",
-      "image": "c3f1.png",
-      "audio": "c3f1.mp3"
+      "image": "c3-f1.png",
+      "audio": "c3-f1.mp3"
     },
     {
       "id": 8,
       "description": "broken-window",
-      "image": "c3f2.png",
-      "audio": "c3f2.mp3"
+      "image": "c3-f2.png",
+      "audio": "c3-f2.mp3"
     },
     {
       "id": 9,
       "description": "collapsed-stone-on-concrete-broken-into-pieces",
-      "image": "c3f3.png",
-      "audio": "c3f3.mp3"
+      "image": "c3-f3.png",
+      "audio": "c3-f3.mp3"
     }
   ]
 }

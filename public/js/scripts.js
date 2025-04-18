@@ -2,12 +2,19 @@ const initMenu = () => {
   const menuButtonElem = document.getElementById("menu-button");
   const menuDropdownElem = document.getElementById("menu-dropdown");
 
-  const toggleMenuHandler = () => {
+  const toggleMenuHandler = (event) => {
+    event.stopPropagation();
+
     menuDropdownElem.style.visibility =
       menuDropdownElem.style.visibility === "visible" ? "hidden" : "visible";
   };
 
   menuButtonElem.addEventListener("click", toggleMenuHandler);
+
+  document.body.addEventListener(
+    "click",
+    () => (menuDropdownElem.style.visibility = "hidden")
+  );
 };
 
 const pageReady = async () => {
