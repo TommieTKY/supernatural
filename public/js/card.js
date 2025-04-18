@@ -30,7 +30,7 @@ const initPage = async () => {
 
   if (mode === "qr") {
     await fetch(
-      `https://api.qrserver.com/v1/create-qr-code/?size=128x128&data=http%3A%2F%2Fsupernatural%2Einfinityfreeapp%2Ecom%2Fcard%2Ehtml%3Ftype%3D${type}%26description%3D${description}`
+      `https://api.qrserver.com/v1/create-qr-code/?size=128x128&data=https%3A%2F%2Fsupernatural%2Ewuaze%2Ecom%2Fcard%2Ehtml%3Ftype%3D${type}%26description%3D${description}`
     )
       .then((res) => res.blob())
       .then((blob) => {
