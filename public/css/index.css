@@ -159,7 +159,7 @@ p {
 }
 
 #modal {
-  margin-top: 9rem;
+  margin-top: 50vh;
   flex-grow: 1;
   background-color: #2c4147;
   display: none;
@@ -173,6 +173,7 @@ p {
   max-width: 352px;
   border-radius: 1em;
   border: 2px solid #bbbf9d;
+  translate: 0% -50%;
 }
 
 #modal h1 {
